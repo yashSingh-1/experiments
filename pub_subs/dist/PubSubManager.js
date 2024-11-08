@@ -36,6 +36,7 @@ class PubSubManager {
                 this.handleMessage(stock, message);
             });
             console.log(`Subscribed to Redis channel: ${stock}`);
+            console.log("Subscriptions of the service: ", this.subscriptions);
         }
     }
     userUnSubscribe(userId, stock) {
